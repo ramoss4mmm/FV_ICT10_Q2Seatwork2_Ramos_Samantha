@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>ICT 10 PYTHON</title>
+<style>
+    body{
+        display: flex;   
+        justify-content: center;
+        flex-direction: column; 
+        align-items: center;
+        background-color: #FF90BB;
+        color: #FFF58A;
+        font-weight: bold;
+    }
+    #container1{
+        padding: 25px;
+        border-radius: 12px;
+        background-color: #FFBBE1;
+        box-shadow: 0 0 10px rgb(255, 65, 166);
+        text-align: center;
+        font-family: "Lucida Console", "Courier New", monospace;
+        font-weight: bold;
+        color: #FFF58A;
+        width: 400px;
+    }
+    #summary{
+        padding: 25px;
+        border-radius: 12px;
+        background-color: #FFBBE1;
+        box-shadow: 0 0 10px rgb(255, 65, 166);
+        text-align: center;
+        font-family: "Lucida Console", "Courier New", monospace;
+        font-weight: bold;
+        color: #FFF58A;
+        width: 400px;
+    }
+</style>
+
+</head>
+
+<body>
+<div id="container1">
+    <h1>General Weighted Average Calculator </h1>
+
+    <br>
+    <!-- to fill out the student information form -->
+    <p>Student Name:</p>
+    <input type="text" id="name" class="form-control" placeholder="Enter your name...">
+
+    <br>
+    <!-- to fill out the grades form -->
+    <p>Enter you grades:</p>
+
+    <p>Science:</p>
+    <input type="text" id="sci" class="form-control" placeholder="Enter your grades...">
+
+    <br>
+
+    <p>English:</p>
+    <input type="text" id="english" class="form-control" placeholder="Enter your grades...">
+
+    <br>
+
+    <p>Math:</p>
+    <input type="text" id="math" class="form-control" placeholder="Enter your grades...">
+
+    <br>
+
+    <p>Filipino:</p>
+    <input type="text" id="fil" class="form-control" placeholder="Enter your grades...">
+    
+    <br>
+    
+    <p>ICT:</p>
+    <input type="text" id="ict" class="form-control" placeholder="Enter your grades...">
+
+    <br>
+    
+    <p>PE:</p>
+
+    <input type="text" id="pe" class="form-control" placeholder="Enter your grades...">
+    <br>
+    <button type="submit" class="btn btn-default" py-click="average" style="color: #FFF58A; font-weight: bold;">Calculate</button>
+</div>
+<br>
+    <!-- This is where the order summary will appear -->
+    <div id="summary">
+        <h3>Calculated Average:</h3>
+        <br>
+        <br>
+    </div>
+
+<script type="py" src="main.py"></script>
+</body>
+
+</html>
